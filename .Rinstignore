@@ -1,0 +1,6 @@
+Makefile
+release-notes.txt
+.*Misc/*
+.*docs/*
+.*data/CVS/*
+^test/.*
