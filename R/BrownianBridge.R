@@ -8,13 +8,13 @@ BrownianBridge<-function(a=0, b=0, sigma=1, t0=0, T=1, N)
   # Brownsche Bewegung ohne Drift
   W_t <- BrownianMotion(S0=a, mu=0, sigma=sigma, T=T, N=N)
   
-  # Brownsche Brücke
+  # Brownsche Br?cke
   B_t <- W_t - ((t-t0)/(T-t0))*W_t[N+1] + ((t-t0)/(T-t0)) * b
   
   B_t
 }
 
-# Draws from the minimum distribution m(T) of a Brownian Bridge B(t) für 0 <= t <= T mit T>0, B(0)=0, B(T)=a 
+# Draws from the minimum distribution m(T) of a Brownian Bridge B(t) f?r 0 <= t <= T mit T>0, B(0)=0, B(T)=a 
 # (see Beskos et al. (2004), p.7,  generalized to the sigma^2<>1 case)
 #
 # Simulation uses the conditional density f(m(T) | B(T)=a) (see Beskos et al. (2004), p.20), 

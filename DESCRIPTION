@@ -1,17 +1,19 @@
 Package: fExpressCertificates
 Type: Package
-Title: fExpressCertificates - Structured Products Valuation for
+Title: Structured Products Valuation for
         ExpressCertificates/Autocallables
-Version: 1.2
-Date: 2013-03-14
+Version: 1.3
+Date: 2019-01-08
 Author: Stefan Wilhelm
 Maintainer: Stefan Wilhelm <stefan.wilhelm@financial.com>
-Depends: R (>= 2.15.0), mvtnorm, tmvtnorm, fCertificates, Matrix
-Description: Collection of pricing by duplication and Monte Carlo methods for Express Certificates products (also known as Autocallables)
+Depends: R (>= 2.15.0), tmvtnorm, fCertificates
+Imports: mvtnorm, Matrix, fExoticOptions, fOptions
+Encoding: latin1
+Description: Provides pricing by duplication and Monte Carlo methods for Express Certificates products (also known as Autocallables).
 License: GPL (>= 2)
 LazyLoad: yes
-URL: http://www.r-project.org
-Packaged: 2013-08-30 14:51:38 UTC; stefan_admin
+URL: https://www.r-project.org
 NeedsCompilation: no
+Packaged: 2019-01-09 22:08:18 UTC; stefan
 Repository: CRAN
-Date/Publication: 2013-08-30 19:24:44
+Date/Publication: 2019-01-10 00:10:03 UTC

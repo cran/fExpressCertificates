@@ -2,6 +2,9 @@ import(mvtnorm)
 import(tmvtnorm)
 import(fCertificates)
 importMethodsFrom(Matrix, "rowSums")
+importFrom("stats", "integrate", "pnorm", "rexp", "rnorm")
+importFrom("fOptions", "GBSOption", "MonteCarloOption", "rnorm.halton", "rnorm.sobol")
+importFrom("fExoticOptions", "CashOrNothingOption")
 
 # simulate paths for stochastic processes
 export(BM)
@@ -41,9 +44,10 @@ export(simExpressPriceTMVN)                               # Monte Carlo simulati
 export(ExpressCertificate.Classic)                        # MVN + numerical integration at maturity for simple payoff functions of the form g(S(T))
 export(MonteCarlo.ExpressCertificate.Classic)             # Euler-Scheme + classic express payoff
 export(MonteCarlo.ExpressCertificate)                     # Euler-Scheme + various payoff functions
-#export(SimulateGenericExpressCertificate)                # generic payoff function; uses simulateExpressPaths für (S(t_1), S(t_2),..., S(t_n); m(t_1),...,m(t_n))  
+#export(SimulateGenericExpressCertificate)                # generic payoff function; uses simulateExpressPaths f?r (S(t_1), S(t_2),..., S(t_n); m(t_1),...,m(t_n))  
 #export(SimulateExpressClassicCertificate)
 #export(SimulateExpressBonusCertificate)
 
 # pretty printing for class "express.certificate"
 export(print.express.certificate)
+S3method(print, express.certificate)

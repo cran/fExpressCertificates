@@ -1,7 +1,7 @@
-403a3790ad974574ccaf9d32e698da9c *DESCRIPTION
-21c4013189acc9ed2b859dec0db8e81f *NAMESPACE
-63ca707d0fd34db6cd5b23f5e445db32 *NEWS
-ebc0e70cfd27e41db496b90dc71d28d2 *R/BrownianBridge.R
+635d0c21e0fcc28c9cd14be0096abf37 *DESCRIPTION
+d38b1a8e0df09015132ca76c0db6ba4a *NAMESPACE
+9d47f3d2f83d96e29fee627645f6d996 *NEWS
+8aa49bd3b0256cec55e80f3b4ef00cf4 *R/BrownianBridge.R
 20c01d75eef1240b0e37ac22c6716a09 *R/BrownianMotion.R
 13c7b21f7b60fbedfa945bc9d39f9fbf *R/ExpressCertificates-MC.R
 54882d274dc408429fdda30e367e8e54 *R/ExpressCertificates.R
